@@ -3,47 +3,140 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Useful Links</title>
+  <title>Contacts</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: #f0f2f5;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f8f9fa;
       margin: 0;
-      padding: 20px;
+      padding: 16px;
+    }
+
+    h2 {
       text-align: center;
+      color: #007BFF;
+      margin-bottom: 20px;
     }
-    h1 {
-      color: #333;
-      margin-bottom: 30px;
-    }
-    .button-container {
+
+    .container {
       display: flex;
-      flex-direction: column;
-      gap: 15px;
-      max-width: 400px;
-      margin: 0 auto;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 16px;
+      max-width: 1000px;
+      margin: auto;
     }
-    a.button {
-      background-color: #1e88e5;
-      color: white;
+
+    .button {
+      position: relative;
+      flex: 1 1 calc(50% - 12px);
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      background-color: #007BFF;
+      color: #fff;
+      padding: 14px 18px;
+      border-radius: 25px;
       text-decoration: none;
-      padding: 14px 20px;
-      border-radius: 8px;
-      font-size: 16px;
-      transition: background 0.3s;
+      font-weight: 600;
+      font-size: 14px;
+      box-shadow: 0 8px 16px rgba(0, 123, 255, 0.4);
+      transition: transform 0.2s, box-shadow 0.2s;
     }
-    a.button:hover {
-      background-color: #1565c0;
+
+    .button:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 24px rgba(0, 123, 255, 0.5);
+    }
+
+    .button i {
+      margin-right: 10px;
+      font-size: 16px;
+    }
+
+    .badge {
+      background-color: rgba(255, 255, 255, 0.9);
+      color: #007BFF;
+      font-size: 10px;
+      font-weight: bold;
+      padding: 3px 8px;
+      border-radius: 12px;
+      margin-left: auto;
+    }
+
+    @media (max-width: 600px) {
+      .button {
+        flex: 1 1 100%;
+      }
     }
   </style>
 </head>
 <body>
-  <h1>Useful Links</h1>
-  <div class="button-container">
-    <a class="button" href="https://example.com" target="_blank">Visit Example</a>
-    <a class="button" href="https://google.com" target="_blank">Open Google</a>
-    <a class="button" href="https://your-link.com" target="_blank">Another Link</a>
-    <!-- Add more buttons as needed -->
+
+  <h2>📞 Important Education Contacts</h2>
+
+  <div class="container">
+    <!-- Top Officials -->
+    <a class="button" href="tel:9876543210">
+      <i class="fas fa-phone"></i>Joint Director (P-R)
+      <span class="badge">Top Official</span>
+    </a>
+    <a class="button" href="tel:9876543210">
+      <i class="fas fa-phone"></i>CEO Poonch
+      <span class="badge">Top Official</span>
+    </a>
+    <a class="button" href="tel:9123456780">
+      <i class="fas fa-phone"></i>DEPO Poonch
+      <span class="badge">Top Official</span>
+    </a>
+
+    <!-- ZEOs Alphabetically -->
+    <a class="button" href="tel:9012345678">
+      <i class="fas fa-phone"></i>ZEO Balakote
+      <span class="badge">ZEO</span>
+    </a>
+    <a class="button" href="tel:9123456780">
+      <i class="fas fa-phone"></i>ZEO Bufliaz
+      <span class="badge">ZEO</span>
+    </a>
+    <a class="button" href="tel:9123456780">
+      <i class="fas fa-phone"></i>ZEO Harni
+      <span class="badge">ZEO</span>
+    </a>
+    <a class="button" href="tel:9876543210">
+      <i class="fas fa-phone"></i>ZEO Kunuyian
+      <span class="badge">ZEO</span>
+    </a>
+    <a class="button" href="tel:9876543210">
+      <i class="fas fa-phone"></i>ZEO Mankote
+      <span class="badge">ZEO</span>
+    </a>
+    <a class="button" href="tel:9012345678">
+      <i class="fas fa-phone"></i>ZEO Mandi
+      <span class="badge">ZEO</span>
+    </a>
+    <a class="button" href="tel:9012345678">
+      <i class="fas fa-phone"></i>ZEO Mendhar
+      <span class="badge">ZEO</span>
+    </a>
+    <a class="button" href="tel:9123456780">
+      <i class="fas fa-phone"></i>ZEO Nangali
+      <span class="badge">ZEO</span>
+    </a>
+    <a class="button" href="tel:9012345678">
+      <i class="fas fa-phone"></i>ZEO Poonch
+      <span class="badge">ZEO</span>
+    </a>
+    <a class="button" href="tel:9012345678">
+      <i class="fas fa-phone"></i>ZEO Sathra
+      <span class="badge">ZEO</span>
+    </a>
+    <a class="button" href="tel:9876543210">
+      <i class="fas fa-phone"></i>ZEO Surankote
+      <span class="badge">ZEO</span>
+    </a>
   </div>
+
 </body>
 </html>

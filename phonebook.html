@@ -8,14 +8,14 @@
   <style>
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      background-color: #F4F6F8; /* Matches your app's background */
+      background-color: #F4F6F8;
       margin: 0;
       padding: 20px;
     }
 
     h2 {
       text-align: center;
-      color: #005B9F; /* App primary blue */
+      color: #005B9F;
       margin-bottom: 24px;
     }
 
@@ -27,7 +27,6 @@
       margin: auto;
     }
 
-    /* Modern Floating Card Style */
     .card {
       display: flex;
       align-items: center;
@@ -36,7 +35,6 @@
       padding: 16px 20px;
       border-radius: 12px;
       box-shadow: 0 4px 6px rgba(0,0,0,0.05), 0 1px 3px rgba(0,0,0,0.1);
-      text-decoration: none;
       transition: transform 0.2s, box-shadow 0.2s;
     }
 
@@ -51,9 +49,12 @@
       color: #222;
     }
 
+    .action-buttons {
+      display: flex;
+      gap: 12px;
+    }
+
     .icon-circle {
-      background-color: #E0E5EC;
-      color: #005B9F;
       width: 40px;
       height: 40px;
       border-radius: 50%;
@@ -61,6 +62,22 @@
       align-items: center;
       justify-content: center;
       font-size: 18px;
+      text-decoration: none;
+      transition: transform 0.2s;
+    }
+
+    .icon-circle:active {
+      transform: scale(0.9);
+    }
+
+    .phone-icon {
+      background-color: #E0E5EC;
+      color: #005B9F;
+    }
+
+    .wa-icon {
+      background-color: #DCF8C6;
+      color: #25D366;
     }
   </style>
 </head>
@@ -69,63 +86,117 @@
   <h2>📞 Important Contacts</h2>
 
   <div class="container">
-    <a class="card" href="tel:9876543210">
+    <div class="card">
         <span class="card-title">Joint Director (Poonch-Rajouri)</span>
-        <div class="icon-circle"><i class="fas fa-phone"></i></div>
-    </a>
-    <a class="card" href="tel:9876543210">
-        <span class="card-title">CEO Poonch</span>
-        <div class="icon-circle"><i class="fas fa-phone"></i></div>
-    </a>
-    <a class="card" href="tel:9123456780">
-        <span class="card-title">DEPO Poonch</span>
-        <div class="icon-circle"><i class="fas fa-phone"></i></div>
-    </a>
+        <div class="action-buttons">
+            <a href="tel:9876543210" class="icon-circle phone-icon"><i class="fas fa-phone"></i></a>
+            <a href="https://wa.me/919876543210" class="icon-circle wa-icon"><i class="fab fa-whatsapp"></i></a>
+        </div>
+    </div>
     
-    <a class="card" href="tel:9012345678">
+    <div class="card">
+        <span class="card-title">CEO Poonch</span>
+        <div class="action-buttons">
+            <a href="tel:9876543210" class="icon-circle phone-icon"><i class="fas fa-phone"></i></a>
+            <a href="https://wa.me/919876543210" class="icon-circle wa-icon"><i class="fab fa-whatsapp"></i></a>
+        </div>
+    </div>
+    
+    <div class="card">
+        <span class="card-title">DEPO Poonch</span>
+        <div class="action-buttons">
+            <a href="tel:9123456780" class="icon-circle phone-icon"><i class="fas fa-phone"></i></a>
+            <a href="https://wa.me/919123456780" class="icon-circle wa-icon"><i class="fab fa-whatsapp"></i></a>
+        </div>
+    </div>
+    
+    <div class="card">
         <span class="card-title">ZEO Balakote</span>
-        <div class="icon-circle"><i class="fas fa-phone"></i></div>
-    </a>
-    <a class="card" href="tel:9123456780">
+        <div class="action-buttons">
+            <a href="tel:9012345678" class="icon-circle phone-icon"><i class="fas fa-phone"></i></a>
+            <a href="https://wa.me/919012345678" class="icon-circle wa-icon"><i class="fab fa-whatsapp"></i></a>
+        </div>
+    </div>
+    
+    <div class="card">
         <span class="card-title">ZEO Bufliaz</span>
-        <div class="icon-circle"><i class="fas fa-phone"></i></div>
-    </a>
-    <a class="card" href="tel:9123456780">
+        <div class="action-buttons">
+            <a href="tel:9123456780" class="icon-circle phone-icon"><i class="fas fa-phone"></i></a>
+            <a href="https://wa.me/919123456780" class="icon-circle wa-icon"><i class="fab fa-whatsapp"></i></a>
+        </div>
+    </div>
+    
+    <div class="card">
         <span class="card-title">ZEO Harni</span>
-        <div class="icon-circle"><i class="fas fa-phone"></i></div>
-    </a>
-    <a class="card" href="tel:9876543210">
+        <div class="action-buttons">
+            <a href="tel:9123456780" class="icon-circle phone-icon"><i class="fas fa-phone"></i></a>
+            <a href="https://wa.me/919123456780" class="icon-circle wa-icon"><i class="fab fa-whatsapp"></i></a>
+        </div>
+    </div>
+    
+    <div class="card">
         <span class="card-title">ZEO Kunuyian</span>
-        <div class="icon-circle"><i class="fas fa-phone"></i></div>
-    </a>
-    <a class="card" href="tel:9876543210">
+        <div class="action-buttons">
+            <a href="tel:9876543210" class="icon-circle phone-icon"><i class="fas fa-phone"></i></a>
+            <a href="https://wa.me/919876543210" class="icon-circle wa-icon"><i class="fab fa-whatsapp"></i></a>
+        </div>
+    </div>
+    
+    <div class="card">
         <span class="card-title">ZEO Mankote</span>
-        <div class="icon-circle"><i class="fas fa-phone"></i></div>
-    </a>
-    <a class="card" href="tel:9012345678">
+        <div class="action-buttons">
+            <a href="tel:9876543210" class="icon-circle phone-icon"><i class="fas fa-phone"></i></a>
+            <a href="https://wa.me/919876543210" class="icon-circle wa-icon"><i class="fab fa-whatsapp"></i></a>
+        </div>
+    </div>
+    
+    <div class="card">
         <span class="card-title">ZEO Mandi</span>
-        <div class="icon-circle"><i class="fas fa-phone"></i></div>
-    </a>
-    <a class="card" href="tel:9012345678">
+        <div class="action-buttons">
+            <a href="tel:9012345678" class="icon-circle phone-icon"><i class="fas fa-phone"></i></a>
+            <a href="https://wa.me/919012345678" class="icon-circle wa-icon"><i class="fab fa-whatsapp"></i></a>
+        </div>
+    </div>
+    
+    <div class="card">
         <span class="card-title">ZEO Mendhar</span>
-        <div class="icon-circle"><i class="fas fa-phone"></i></div>
-    </a>
-    <a class="card" href="tel:9123456780">
+        <div class="action-buttons">
+            <a href="tel:9012345678" class="icon-circle phone-icon"><i class="fas fa-phone"></i></a>
+            <a href="https://wa.me/919012345678" class="icon-circle wa-icon"><i class="fab fa-whatsapp"></i></a>
+        </div>
+    </div>
+    
+    <div class="card">
         <span class="card-title">ZEO Nangali</span>
-        <div class="icon-circle"><i class="fas fa-phone"></i></div>
-    </a>
-    <a class="card" href="tel:9012345678">
+        <div class="action-buttons">
+            <a href="tel:9123456780" class="icon-circle phone-icon"><i class="fas fa-phone"></i></a>
+            <a href="https://wa.me/919123456780" class="icon-circle wa-icon"><i class="fab fa-whatsapp"></i></a>
+        </div>
+    </div>
+    
+    <div class="card">
         <span class="card-title">ZEO Poonch</span>
-        <div class="icon-circle"><i class="fas fa-phone"></i></div>
-    </a>
-    <a class="card" href="tel:9012345678">
+        <div class="action-buttons">
+            <a href="tel:9012345678" class="icon-circle phone-icon"><i class="fas fa-phone"></i></a>
+            <a href="https://wa.me/919012345678" class="icon-circle wa-icon"><i class="fab fa-whatsapp"></i></a>
+        </div>
+    </div>
+    
+    <div class="card">
         <span class="card-title">ZEO Sathra</span>
-        <div class="icon-circle"><i class="fas fa-phone"></i></div>
-    </a>
-    <a class="card" href="tel:9876543210">
+        <div class="action-buttons">
+            <a href="tel:9012345678" class="icon-circle phone-icon"><i class="fas fa-phone"></i></a>
+            <a href="https://wa.me/919012345678" class="icon-circle wa-icon"><i class="fab fa-whatsapp"></i></a>
+        </div>
+    </div>
+    
+    <div class="card">
         <span class="card-title">ZEO Surankote</span>
-        <div class="icon-circle"><i class="fas fa-phone"></i></div>
-    </a>
+        <div class="action-buttons">
+            <a href="tel:9876543210" class="icon-circle phone-icon"><i class="fas fa-phone"></i></a>
+            <a href="https://wa.me/919876543210" class="icon-circle wa-icon"><i class="fab fa-whatsapp"></i></a>
+        </div>
+    </div>
   </div>
 
 </body>
